@@ -2,7 +2,7 @@
 
 ##Overview
 
-An experiment to get [Spacewalk][1] 2.2 running under Docker, as I wanted a quick means of running up the app to test stuff out. At the moment the application and the Postgres database all run within the same container. It'd be quite simple to split them out across separate containers and connect them together using --link and --volumes-from. 
+An experiment to get [Spacewalk](http://spacewalk.redhat.com/) 2.2 running under Docker, as I wanted a quick means of running up the app to test stuff out. At the moment the application and the Postgres database all run within the same container. It'd be quite simple to split them out across separate containers and connect them together using --link and --volumes-from. 
 
 ##Building the image
 
