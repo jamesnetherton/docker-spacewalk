@@ -17,7 +17,7 @@ docker build -t spacewalk .
 To run Spacewalk do:
 
 ```
-docker run -P --name spacewalk spacewalk
+docker run --name spacewalk spacewalk
 ```
 
 Then open a browser and hit the container IP address. You can determine the IP address by:
@@ -25,6 +25,7 @@ Then open a browser and hit the container IP address. You can determine the IP a
 docker inspect --format {{.NetworkSettings.IPAddress}} spacewalk
 ```
 
+It takes a little while to initialise everything, so don't panic if initially you get 'Service Temporarily Unavailable' messages. Be patient, refresh the page every 10 seconds or so and eventually you'll see the admin user creation page. 
 
 ##Mit License
 
