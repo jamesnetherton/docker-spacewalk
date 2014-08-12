@@ -9,7 +9,7 @@ An experiment to get [Spacewalk](http://spacewalk.redhat.com/) 2.2 running under
 Clone this repository, change into the source directory and run:
 
 ```
-docker build -t spacewalk .
+docker build -t jamesnetherton/spacewalk:2.2 .
 ```
 
 ##Running Spacewalk
@@ -17,7 +17,7 @@ docker build -t spacewalk .
 To run Spacewalk do:
 
 ```
-docker run --name spacewalk spacewalk
+docker run --name spacewalk jamesnetherton/spacewalk:2.2
 ```
 
 Then open a browser and hit the container IP address. You can determine the IP address by:
